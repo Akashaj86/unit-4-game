@@ -45,5 +45,21 @@ h1, h2, p {
     margin-top: 20%;
     padding: 50px;
   }
+  .jumbotron {
+    max-width: 100%;
+    margin: auto;
+    margin-top: 20%;
+    padding: 50px;
+    
+  }
 
+  .Your
+  {
+    width: 60%;
+    margin: auto;
+    margin-top: 20%;
+    padding: 50px;
+    background: rgb(6, 193, 240);
+    opacity: 0.5;
+  }
   @media only-screen(max-width: 768px;)
