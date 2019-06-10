@@ -17,3 +17,33 @@ h1, h2, p {
       font-style: oblique;
       color: rgb(248, 7, 7);
   }
+
+  .crystal1 {
+    max-width: 100%;
+    margin: auto;
+    margin-top: 20%;
+    padding: 50px;
+  }
+
+  .crystal2 {
+    max-width: 100%;
+    margin: auto;
+    margin-top: 20%;
+    padding: 50px;
+  }
+
+  .crystal3 {
+    max-width: 100%;
+    margin: auto;
+    margin-top: 20%;
+    padding: 50px;
+  }
+
+  .crystal4 {
+    max-width: 100%;
+    margin: auto;
+    margin-top: 20%;
+    padding: 50px;
+  }
+
+  @media only-screen(max-width: 768px;)
