@@ -9,7 +9,8 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-   <div id="crystal1"></div>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <div id="crystal1"></div>
    <div id="crystal2"></div>
    <div id="crystal3"></div>
    <div id="crystal4"></div>
@@ -18,31 +19,30 @@
     <p>You will be given a random number at the start of the game.
         There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score. You win the game by matching your total score to the random number provided. You lose the game if your total score surpasses the random number given. The value of each crystal is hidden from you until you click on it. Once the game is reset, the crystals will change their value.
     </p>
-    <!--blue1, clear2, peach3, purple4-->
-    <!--fill in class, onClick, id info for each crystal-->
+    <!--blue1, clear2, peach3, purple4
+    fill in class, onClick, id info for each crystal-->
     <div class="container">
     <div class="row">
     <div class="col-md-8">
     <div class="buttons">
-    <img class="" onclick="" id="" src="C:\Users\Ashlie\Desktop\bootcamp-homework\04-hw crystals\unit-4-game\images\bluecrys.jpg" alt="crystal1" width="100" height="100">
-    <img class="" onclick="" id="" src="C:\Users\Ashlie\Desktop\bootcamp-homework\04-hw crystals\unit-4-game\images\clearcrys.jpg" alt="crystal2" width="100" height="100">
-    <img class="" onclick="" id="" src="C:\Users\Ashlie\Desktop\bootcamp-homework\04-hw crystals\unit-4-game\images\peachcrys.jpg" alt="crystal3" width="100" height="100">
-    <img class="" onclick="" id="" src="C:\Users\Ashlie\Desktop\bootcamp-homework\04-hw crystals\unit-4-game\images\purplecrys.jpg" alt="crystal4" width="100" height="100">
+    <img class="crystals" onclick="popCrystal(event, 'crystal1')" id="crystal1" src="C:\Users\Ashlie\Desktop\bootcamp-homework\04-hw crystals\unit-4-game\images\bluecrys.jpg" alt="crystal1" width="100" height="100">
+    <img class="crystals" onclick="popCrystal(event, 'crystal2')" id="crystal2" src="C:\Users\Ashlie\Desktop\bootcamp-homework\04-hw crystals\unit-4-game\images\clearcrys.jpg" alt="crystal2" width="100" height="100">
+    <img class="crystals" onclick="popCrystal(event, 'crystal3')" id="crystal3" src="C:\Users\Ashlie\Desktop\bootcamp-homework\04-hw crystals\unit-4-game\images\peachcrys.jpg" alt="crystal3" width="100" height="100">
+    <img class="crystals" onclick="popCrystal(event, 'crystal4')" id="crystal4" src="C:\Users\Ashlie\Desktop\bootcamp-homework\04-hw crystals\unit-4-game\images\purplecrys.jpg" alt="crystal4" width="100" height="100">
     <br>
-    Your Points:<span id="userTotal"></span>
+    User Points:<span id="userTotal"></span>
     <br>
     PC Number:<span id="#numberToGet"></span>
     <br>
-    Your wins:<span id="#numberWins"></span>
+    User wins:<span id="#numberWins"></span>
     <br>
-    Your Losses:<span id="#numberLosses"></span>
+    User Losses:<span id="#numberLosses"></span>
     </div>
     </div>
     </div>
     </div>  
-    <!--You need up to 6 jumbotrons for the elements of the page.-->
-    <!--Don't forget the bootstrap cheat sheet in slack for rows and cols.
-        Don't forget to record wins and losses-->
+    <!--Don't forget the bootstrap cheat sheet in slack for rows and cols-->
+
 <script src="game.js">
 </script>  
 </body>

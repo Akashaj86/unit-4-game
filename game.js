@@ -4,10 +4,10 @@ $(document).ready(function() {
     
     $("#numberToGet").text(random);
     
-    var num1 = Math.floor(Math.random()*12+1);
-    var num2 = Math.floor(Math.random()*12+1);
-    var num3 = Math.floor(Math.random()*12+1);
-    var num4 = Math.floor(Math.random()*12+1);
+    var crystal1 = Math.floor(Math.random()*12+1);
+    var crystal2 = Math.floor(Math.random()*12+1);
+    var crystal3 = Math.floor(Math.random()*12+1);
+    var crystal4 = Math.floor(Math.random()*12+1);
     
     var userTotal= 0;
     var wins = 0;
@@ -23,10 +23,10 @@ $(document).ready(function() {
         random = Math.floor(Math.random()*120+19);
         console.log(random);
         $("#numberToGet").text(random);
-        var num1 = Math.floor(Math.random()*12+1);
-        var num2 = Math.floor(Math.random()*12+1);
-        var num3 = Math.floor(Math.random()*12+1);
-        var num4 = Math.floor(Math.random()*12+1);
+        var crystal1 = Math.floor(Math.random()*12+1);
+        var crystal2 = Math.floor(Math.random()*12+1);
+        var crystal3 = Math.floor(Math.random()*12+1);
+        var crystal4 = Math.floor(Math.random()*12+1);
         userTotal = 0;
         $("#score").text(userTotal);
     }
@@ -45,8 +45,8 @@ $(document).ready(function() {
         reset();
     }
     
-    $("#image1").on("click", function() {
-        userTotal = userTotal + num1;
+    $("#crystal1").on("click", function() {
+        userTotal = userTotal + crystal1;
         console.log("New userTotal " + userTotal);
         $("#score").text(userTotal);
     
