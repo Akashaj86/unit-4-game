@@ -7,9 +7,11 @@
     <title>Crystals Game</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 <body>
- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <!--I had a lot of trouble with this project. After trying two different JQuery links, it semed to crash the page. It didn't matter where I moved the script tags for both JQ and java, it just made it worse. I have made reference to the popCrystal event in both the html and java pages and the pc still has no idea what to do with it. I've googled and asked the class, had a classmate look at the code, etc. I'm at a loss. Throwing in the towel. This could have been a great page, but here we are, if noone has any ideas in class tonight, I'm screwed.-->
+  
   <div id="crystal1"></div>
    <div id="crystal2"></div>
    <div id="crystal3"></div>
@@ -23,27 +25,27 @@
     fill in class, onClick, id info for each crystal-->
     <div class="container">
     <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-12">
     <div class="buttons">
     <img class="crystals" onclick="popCrystal(event, 'crystal1')" id="crystal1" src="C:\Users\Ashlie\Desktop\bootcamp-homework\04-hw crystals\unit-4-game\images\bluecrys.jpg" alt="crystal1" width="100" height="100">
     <img class="crystals" onclick="popCrystal(event, 'crystal2')" id="crystal2" src="C:\Users\Ashlie\Desktop\bootcamp-homework\04-hw crystals\unit-4-game\images\clearcrys.jpg" alt="crystal2" width="100" height="100">
     <img class="crystals" onclick="popCrystal(event, 'crystal3')" id="crystal3" src="C:\Users\Ashlie\Desktop\bootcamp-homework\04-hw crystals\unit-4-game\images\peachcrys.jpg" alt="crystal3" width="100" height="100">
     <img class="crystals" onclick="popCrystal(event, 'crystal4')" id="crystal4" src="C:\Users\Ashlie\Desktop\bootcamp-homework\04-hw crystals\unit-4-game\images\purplecrys.jpg" alt="crystal4" width="100" height="100">
     <br>
-    User Points:<span id="userTotal"></span>
+    Points:<span id="userTotal"></span>
     <br>
-    PC Number:<span id="#numberToGet"></span>
+    Number to Get:<span id="#numberToGet"></span>
     <br>
-    User wins:<span id="#numberWins"></span>
+    Wins:<span id="#numberWins"></span>
     <br>
-    User Losses:<span id="#numberLosses"></span>
+    Losses:<span id="#numberLosses"></span>
     </div>
     </div>
     </div>
-    </div>  
+    </div> 
     <!--Don't forget the bootstrap cheat sheet in slack for rows and cols-->
-
-<script src="game.js">
+ <script src="game.js"></script>   
+ <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
 </script>  
 </body>
 </html>

@@ -1,8 +1,10 @@
+//Code is broken beyond all repair (for me). I keep getting a console message that says the $ and my popCrystal element are not defined but I can't figure out why.//
+
 $(document).ready(function() {
 
     var random = Math.floor(Math.random()*120+19);
-    
-    $("#numberToGet").text(random);
+    } 
+    ,$("#numberToGet").text(random));
     
     var crystal1 = Math.floor(Math.random()*12+1);
     var crystal2 = Math.floor(Math.random()*12+1);
@@ -16,9 +18,9 @@ $(document).ready(function() {
     $("#numberWins").text(wins);
     $("#numberLosses").text(losses);
     
-    function popCrystal(evt, getCrystal) {
+    var popCrystal = function popCrystal() {
         document.getElementById(getCrystal).style.float = "right";
-        }
+       
     function reset() {
         random = Math.floor(Math.random()*120+19);
         console.log(random);

@@ -1,12 +1,14 @@
+/*Can't figure out how to reference the user points, total, etc in css so I can change the legibility and position.*/
+
 body {background-image: url("https://static.giantbomb.com/uploads/original/1/10831/1094646-screen07.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-h1, h2,
+h1, h2
  {
     position: center;
-    width: 60%;
+    width: 50%;
     margin: auto;
     margin-top: 20%;
     padding: 50px;
@@ -20,9 +22,10 @@ h1, h2,
     margin-top: 10%;
     padding: 5px;
     background: rgb(6, 193, 240);
+    color: rgb(248, 7, 7);
   }
 
-  h1, h2, p {
+  h1, h2 {
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-style: oblique;
       color: rgb(248, 7, 7);
@@ -55,18 +58,12 @@ h1, h2,
     margin-top: 20%;
     padding: 50px;
   }
-  .jumbotron {
-    max-width: 100%;
-    margin: auto;
-    margin-top: 20%;
-    padding: 50px;
-    
-  }
+  
 
-  .User 
-  {
+  .Points{ 
+  
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-style: oblique;
-      color: rgb(248, 7, 7);
+      color: rgb(240, 1, 1);
   }
   @media only-screen(max-width: 768px;)
